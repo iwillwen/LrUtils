@@ -1,0 +1,129 @@
+[
+  {
+    "value": "FUJIFILM",
+    "title": "富士 Fujifilm",
+    "models": [
+      {
+        "value": "GFX100S",
+        "title": "GFX 100S",
+        "uniqueCameraModel": "Fujifilm GFX 100S"
+      },
+      {
+        "value": "GFX50S",
+        "title": "GFX 50S",
+        "uniqueCameraModel": "Fujifilm GFX 50S"
+      },
+      {
+        "value": "V100V",
+        "title": "X 100V",
+        "uniqueCameraModel": "Fujifilm X 100V"
+      },
+      {
+        "value": "X-E4",
+        "title": "X-E4",
+        "uniqueCameraModel": "Fujifilm X-E4"
+      },
+      {
+        "value": "X-H2S",
+        "title": "X-H2S",
+        "uniqueCameraModel": "Fujifilm X-H2S"
+      },
+      {
+        "value": "X-Pro3",
+        "title": "X-Pro3",
+        "uniqueCameraModel": "Fujifilm X-Pro3"
+      },
+      {
+        "value": "X-S10",
+        "title": "X-S10",
+        "uniqueCameraModel": "Fujifilm X-S10"
+      },
+      {
+        "value": "X-T5",
+        "title": "X-T5",
+        "uniqueCameraModel": "Fujifilm X-T5"
+      },
+      { "value": "X-H2", "title": "X-H2", "uniqueCameraModel": "Fujifilm X-H2" }
+    ]
+  },
+  {
+    "value": "SONY",
+    "title": "索尼 Sony",
+    "models": [
+      { "value": "ILCE-1", "title": "A1", "uniqueCameraModel": "Sony ILCE-1" },
+      {
+        "value": "ILCE-7RM5",
+        "title": "A7R5",
+        "uniqueCameraModel": "Sony ILCE-7RM5"
+      },
+      {
+        "value": "ILCE-7M4",
+        "title": "A1M4",
+        "uniqueCameraModel": "Sony ILCE-7M4"
+      },
+      {
+        "value": "ILCE-7SM3",
+        "title": "A7S3",
+        "uniqueCameraModel": "Sony ILCE-7SM3"
+      },
+      {
+        "value": "ILCE-7C",
+        "title": "A7C",
+        "uniqueCameraModel": "Sony ILCE-7C"
+      },
+      {
+        "value": "ILCE-9M2",
+        "title": "A9M2",
+        "uniqueCameraModel": "Sony ILCE-9M2"
+      }
+    ]
+  },
+  {
+    "value": "Canon",
+    "title": "佳能 Canon",
+    "models": [
+      { "value": "Canon EOS R3", "title": "EOS R3" },
+      { "value": "Canon EOS R5", "title": "EOS R5" },
+      { "value": "Canon EOS R6m2", "title": "EOS R6 II" }
+    ]
+  },
+  {
+    "value": "NIKON CORPORATION",
+    "title": "尼康 Nikon",
+    "models": [
+      { "value": "NIKON Z 9", "title": "Z9" },
+      { "value": "NIKON Z 7_2", "title": "Z7 II" },
+      { "value": "NIKON Z 6_2", "title": "Z6 II" },
+      { "value": "NIKON Z 5", "title": "Z5" }
+    ]
+  },
+  {
+    "value": "Leica Camera AG",
+    "title": "徕卡 Leica",
+    "models": [{ "value": "M8 Digital Camera", "title": "M8" }]
+  },
+  {
+    "value": "RICOH IMAGING COMPANY, LTD.",
+    "title": "理光 RICOH",
+    "models": [
+      { "value": "RICOH GR IIIx", "title": "GR3x" },
+      { "value": "RICOH GR III", "title": "GR3" }
+    ]
+  },
+  {
+    "value": "Hasselblad",
+    "title": "哈苏 Hasselblad",
+    "models": [
+      {
+        "value": "X2D 100C",
+        "title": "X2D 100C",
+        "uniqueCameraModel": "Hasselblad X2D 100C"
+      },
+      {
+        "value": "X1D II 50C",
+        "title": "X1D II 50C",
+        "uniqueCameraModel": "Hasselblad X1D II 50C"
+      }
+    ]
+  }
+]
