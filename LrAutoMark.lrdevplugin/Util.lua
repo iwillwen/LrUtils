@@ -381,24 +381,17 @@ If "s" ends in a separator pattern, then the last returned field will be the
 empty string.
 ------------------------------------------------------------------------------]]
 
-function Util.split (s, sepPattern)
-    local result = {}
-    local i = 1
-    while true do
-        local first, last = string.find (s, sepPattern, i)
-        if not first then 
-            table.insert (result, string.sub (s, i))
-            return result
-            end
-        table.insert (result, string.sub (s, i, first - 1))
-        if last >= #s then
-            table.insert (result, "")
-            return result
-            end
-        i = last + 1
-        end
+function Util.split (inputstr, sep)
+    if sep == nil then
+       sep = "%s"
     end
-            
+    local t={}
+    for str in string.gmatch(inputstr, "([^"..sep.."]+)") do
+       table.insert(t, str)
+    end
+    return t
+    end
+
 
 --[[----------------------------------------------------------------------------
 public string

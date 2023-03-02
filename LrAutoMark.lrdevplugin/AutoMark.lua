@@ -36,7 +36,7 @@ function AutoMark.showDialog()
       f:row {
         spacing = f:label_spacing(),
         f:static_text {
-          title = "请输入需要自动标记照片的关键词，以英文逗号隔开或每行一个。"
+          title = "请输入需要自动标记照片的关键词，以英文逗号隔开。"
         },
       },
     
@@ -77,7 +77,11 @@ end
 
 function AutoMark.markingPhotosWithInputValue(value)
   local normalizedValue = LrStringUtils.trimWhitespace(value)
-  local keywordList = Util.split(normalizedValue, "\r\n,")
+  logger:trace("AutoMark: marking keywords: "..normalizedValue)
+
+  local keywordList = Util.arrayFilter(Util.split(normalizedValue, ","), function (row)
+    return string.len(row) > 0
+  end)
 
   local keywords = {}
   
@@ -100,11 +104,10 @@ function AutoMark.markingPhotosWithInputValue(value)
 
       for _, keyword in ipairs(keywords) do
         logger:trace("AutoMark: Start to find photos with keyword "..keyword)
-  
         local foundPhotos = catalog:findPhotos {
           searchDesc = {
-            criteria = "all",
-            operation = "any",
+            criteria = "filename",
+            operation = "beginsWith",
             value = keyword,
           }
         }
@@ -116,7 +119,6 @@ function AutoMark.markingPhotosWithInputValue(value)
           logger:trace("Marked Photo "..photo:getFormattedMetadata("fileName"))
           markedCount = markedCount + 1
         end
-  
       end
   
       LrDialogs.message("标记完成", "已对 "..tostring(markedCount).." 张照片进行标记。")
